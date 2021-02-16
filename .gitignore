@@ -1,5 +1,5 @@
 .env
-
+./uci
 # Project exclude paths
 /node_modules/
 /src/index.js
