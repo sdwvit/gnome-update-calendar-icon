@@ -1,0 +1,21 @@
+{
+  "name": "ubuntu-update-calendar-icon",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "start": "ts-node ./src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "8.2.0",
+    "ts-node": "9.1.1",
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.0",
+    "prettier": "2.2.1"
+  }
+}

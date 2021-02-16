@@ -1,0 +1,150 @@
+{
+  "_declaration": {
+    "_attributes": { "version": "1.0", "encoding": "UTF-8", "standalone": "no" }
+  },
+  "svg": {
+    "_attributes": {
+      "xmlns:dc": "http://purl.org/dc/elements/1.1/",
+      "xmlns:cc": "http://creativecommons.org/ns#",
+      "xmlns:rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "xmlns:svg": "http://www.w3.org/2000/svg",
+      "xmlns": "http://www.w3.org/2000/svg",
+      "xmlns:sodipodi": "http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd",
+      "xmlns:inkscape": "http://www.inkscape.org/namespaces/inkscape",
+      "width": "755.41754",
+      "height": "755.41754",
+      "viewBox": "0 0 3021.6702 3021.6702",
+      "version": "1.1",
+      "id": "svg839",
+      "inkscape:version": "1.0.2 (e86c870879, 2021-01-15)",
+      "sodipodi:docname": "calendar.svg"
+    },
+    "defs": {
+      "_attributes": { "id": "defs833" },
+      "rect": [
+        {
+          "_attributes": {
+            "x": "3262.5197",
+            "y": "660.76095",
+            "width": "28.621566",
+            "height": "629.20116",
+            "id": "rect905"
+          }
+        },
+        {
+          "_attributes": {
+            "x": "2743.1399",
+            "y": "1703.5095",
+            "width": "383.90137",
+            "height": "1273.8452",
+            "id": "rect949"
+          }
+        }
+      ]
+    },
+    "sodipodi:namedview": {
+      "_attributes": {
+        "id": "base",
+        "pagecolor": "#ffffff",
+        "bordercolor": "#666666",
+        "borderopacity": "1.0",
+        "inkscape:pageopacity": "0.0",
+        "inkscape:pageshadow": "2",
+        "inkscape:zoom": "0.35355339",
+        "inkscape:cx": "589.95735",
+        "inkscape:cy": "187.13752",
+        "inkscape:document-units": "mm",
+        "inkscape:current-layer": "g846",
+        "inkscape:document-rotation": "0",
+        "showgrid": "false",
+        "inkscape:window-width": "1920",
+        "inkscape:window-height": "992",
+        "inkscape:window-x": "0",
+        "inkscape:window-y": "0",
+        "inkscape:window-maximized": "1",
+        "showguides": "false",
+        "inkscape:lockguides": "false"
+      },
+      "inkscape:grid": {
+        "_attributes": {
+          "type": "xygrid",
+          "id": "grid1420",
+          "originx": "1651.947",
+          "originy": "1398.2047"
+        }
+      }
+    },
+    "metadata": {
+      "_attributes": { "id": "metadata836" },
+      "rdf:RDF": {
+        "cc:Work": {
+          "_attributes": { "rdf:about": "" },
+          "dc:format": { "_text": "image/svg+xml" },
+          "dc:type": {
+            "_attributes": {
+              "rdf:resource": "http://purl.org/dc/dcmitype/StillImage"
+            }
+          },
+          "dc:title": {}
+        }
+      }
+    },
+    "g": {
+      "_attributes": {
+        "inkscape:label": "Layer 1",
+        "inkscape:groupmode": "layer",
+        "id": "layer1",
+        "transform": "translate(1651.9469,1398.2047)"
+      },
+      "g": {
+        "_attributes": {
+          "id": "g846",
+          "transform": "matrix(0.98117047,0,0,0.98117047,0.37212998,14.311982)"
+        },
+        "rect": {
+          "_attributes": {
+            "style": "fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#e8e8e8;stroke-width:22.6772;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1",
+            "id": "rect830",
+            "width": "3021.6702",
+            "height": "3021.6702",
+            "x": "-1651.9469",
+            "y": "-1398.2047",
+            "ry": "586.14447",
+            "rx": "586.14447"
+          }
+        },
+        "path": {
+          "_attributes": {
+            "style": "fill:#e9574e;fill-opacity:1;stroke:none;stroke-width:4px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1",
+            "d": "m 781.87682,-1397.3636 c 323.12298,0 586.93278,253.5792 586.55598,589.27998 v 311.35956 H -1652.2814 V -880.3523 c 0,-236.8882 242.8187,-519.2938 566.7828,-517.7072 z",
+            "id": "path967",
+            "sodipodi:nodetypes": "ccccccc"
+          }
+        },
+        "text": [
+          {
+            "_attributes": {
+              "xml:space": "preserve",
+              "style": "font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1994.74px;line-height:1.25;font-family:'Fira Sans Condensed';-inkscape-font-specification:'Fira Sans Condensed, ';text-align:center;text-anchor:middle;fill:#5a5a5a;fill-opacity:1;stroke:none;stroke-width:49.8683",
+              "x": "-156.31947",
+              "y": "1201.1144",
+              "id": "text879"
+            },
+            "_text": "15"
+          },
+          {
+            "_attributes": {
+              "xml:space": "preserve",
+              "style": "font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:694.258px;line-height:1.25;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue';text-align:center;letter-spacing:0px;text-anchor:middle;fill:#fcfcfc;fill-opacity:1;stroke:none;stroke-width:2.08279",
+              "x": "-163.71205",
+              "y": "-727.25665",
+              "id": "text931-5",
+              "transform": "scale(1.0238828,0.97667429)"
+            },
+            "_text": "Feb"
+          }
+        ]
+      }
+    }
+  }
+}
