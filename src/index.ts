@@ -6,6 +6,7 @@ import { SVG } from "../types/interfaces";
 
 dotenv.config();
 
+const log = (...data: string[]) => console.log(new Date(), ...data);
 const ICON_PATH = process.env.ICON_PATH || "";
 
 if (!ICON_PATH || !fs.existsSync(ICON_PATH)) {
@@ -15,7 +16,7 @@ if (!ICON_PATH || !fs.existsSync(ICON_PATH)) {
 
 function saveFile(where: string, data: string) {
   fs.writeFileSync(where, data);
-  console.log(`Saved svg as: ${where}`);
+  log(`Saved svg as: ${where}`);
 }
 
 function readSvg(where: string): string {
@@ -45,7 +46,7 @@ function updateCaches() {
     "-c",
     'update-icon-caches /usr/share/icons/*',
   ]);
-  child.on("exit",() => console.log('Cache updated successfully'));
+  child.on("exit",() => log('Cache updated successfully'));
 }
 
 async function exec() {

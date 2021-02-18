@@ -4,3 +4,4 @@ uci
 /node_modules/
 /src/index.js
 .idea
+/update-calendar-icon.log
