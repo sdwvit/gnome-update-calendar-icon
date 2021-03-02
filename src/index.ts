@@ -23,37 +23,51 @@ function readSvg(where: string): string {
   return fs.readFileSync(where).toString();
 }
 
-async function modifySvg(data: string): Promise<string> {
-  const modified: SVG = (xml2js.xml2js(data, {
+function getSVGXml(data: string): SVG {
+  return (xml2js.xml2js(data, {
     compact: true,
   }) as unknown) as SVG;
+}
 
+function updateSVG(svg: SVG): boolean {
   const today = new Date();
   const date = today.getDate().toString();
   const month = today.toString().slice(4, 7);
 
-  modified.svg.g.g.text[0]._text = date;
-  modified.svg.g.g.text[1]._text = month;
+  if (
+    svg.svg.g.g.text[0]._text !== date ||
+    svg.svg.g.g.text[1]._text !== month
+  ) {
+    svg.svg.g.g.text[0]._text = date;
+    svg.svg.g.g.text[1]._text = month;
+    return true;
+  }
 
-  return xml2js.js2xml((modified as unknown) as ElementCompact, {
+  return false;
+}
+
+function convertBack(svg: SVG):string {
+  return xml2js.js2xml((svg as unknown) as ElementCompact, {
     compact: true,
     spaces: 2,
   });
 }
 
 function updateCaches() {
-  const child = spawn("bash", [
-    "-c",
-    'update-icon-caches /usr/share/icons/*',
-  ]);
-  child.on("exit",() => log('Cache updated successfully'));
+  const child = spawn("bash", ["-c", "update-icon-caches /usr/share/icons/*"]);
+  child.on("exit", () => log("Cache updated successfully"));
 }
 
 async function exec() {
-  const svg = readSvg(ICON_PATH);
-  const modified = await modifySvg(svg);
-  saveFile(ICON_PATH, modified);
-  updateCaches();
+  const svg: string = readSvg(ICON_PATH);
+  const svgXml: SVG = getSVGXml(svg);
+  const updated = updateSVG(svgXml);
+  if (updated) {
+    saveFile(ICON_PATH, convertBack(svgXml));
+    updateCaches();
+  } else {
+    console.log('Nothing to update')
+  }
 }
 
 exec();
