@@ -64,10 +64,10 @@ async function exec() {
   const updated = updateSVG(svgXml);
   if (updated) {
     saveFile(ICON_PATH, convertBack(svgXml));
-    updateCaches();
   } else {
     console.log('Nothing to update')
   }
+  updateCaches();
 }
 
 exec();
